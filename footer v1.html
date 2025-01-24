@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Footer Example</title>
+<style>
+footer {
+    background-color: #006400; /* Green background */
+    padding: 15px 20px; /* Reduced padding for a compact look */
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 14px; /* Reduced font size */
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allows sections to wrap on smaller screens */
+    gap: 20px; /* Add spacing between sections */
+}
+
+.footer-section {
+    text-align: left;
+    flex: 1; /* Make sections evenly spaced */
+    min-width: 150px; /* Ensure sections don't shrink too much */
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 16px; /* Reduced heading size */
+}
+
+.footer-section p {
+    margin: 5px 0; /* Reduce spacing between lines */
+    line-height: 1.5; /* Improve readability */
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #FFD700; /* Gold color on hover for better UX */
+}
+
+.icon {
+    margin-right: 8px; /* Space between icon and text */
+    vertical-align: middle;
+    font-size: 16px; /* Adjust icon size */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: flex-start; /* Align sections to the left */
+        gap: 15px;
+    }
+
+    .footer-section {
+        text-align: center; /* Center-align content on smaller screens */
+        flex: none;
+    }
+}
+
+/* Footer Bottom Line */
+.footer-bottom {
+    margin-top: 15px;
+    font-size: 12px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    color: #ddd;
+}
+</style>
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>ABOUT US</h3>
+            <p><a href="Main_homepage.html">NTUC FairPrice ECO</a></p>
+            <p><i class="fa-solid fa-calendar-days icon"></i><a href="events.html">Events</a></p>
+        </div>
+        <div class="footer-section">
+            <h3>PARTNERSHIPS</h3>
+            <p><i class="fa-solid fa-leaf icon"></i><a href="https://thelocalfarm.sg/">The Local Farm</a></p>
+            <p><i class="fa-solid fa-bolt icon"></i><a href="https://renault.com.sg/">Renault Electric Van</a></p>
+        </div>
+        <div class="footer-section">
+            <h3>FOLLOW US ON</h3>
+            <p><i class="fa-brands fa-facebook icon"></i><a href="https://www.facebook.com/">@FairPrice_ECO</a></p>
+            <p><i class="fa-brands fa-instagram icon"></i><a href="https://www.instagram.com/">@FairPrice.ECO</a></p>
+            <p><i class="fa-brands fa-tiktok icon"></i><a href="https://www.tiktok.com/en/">@FairPrice.ECO</a></p>
+        </div>
+        <div class="footer-section">
+            <h3>CONTACT US</h3>
+            <p><i class="fa-solid fa-phone icon"></i>+65 6777 8222</p>
+            <p><i class="fa-solid fa-envelope icon"></i><a href="mailto:FairPriceECO@gmail.com">FairPriceECO@gmail.com</a></p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2022 NTUC FairPrice ECO. All rights reserved.
+    </div>
+</footer>
+
+</body>
+</html>
