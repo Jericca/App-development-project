@@ -1,0 +1,88 @@
+<style>
+    .navbar {
+        background-color: #f8f9fa; /* Example light background */
+        position: fixed; /* Keeps the navbar at the top even when scrolling */
+        top: 0; /* Aligns it to the top of the page */
+        width: 100%; /* Makes sure the navbar spans the entire width */
+        z-index: 1000; /* Ensures it appears above other elements */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+    }
+    .navbar-brand img {
+        max-height: 72px; /* Adjust as needed */
+        margin-right: 5px;
+    }
+    .navbar-nav .nav-link {
+        margin-right: 15px;
+    }
+    .search-container {
+        display: flex;
+        align-items: center;
+    }
+    .nav-search-bar {
+        border-radius: 20px;
+    }
+    .search-icon {
+        margin-left: 10px;
+        cursor: pointer;
+        color: gray;
+    }
+    .voice-icon {
+        margin-left: -50px;
+        cursor: pointer;
+        color: gray;
+    }
+    .user-info {
+        margin-left: 10px; /* Push user info to the right */
+    }
+    .user-info .nav-link {
+        margin-left: 10px;
+    }
+    .nav-link-1 {
+        text-decoration: none;
+        color: black;
+        margin-left: 10px;
+    }
+    .shopping-cart {
+        text-decoration: none;
+        color: black;
+        margin-left: 30px;
+    }
+</style>
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="home.html">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="FairPrice Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Events <i class="fa-solid fa-calendar-days"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Categories <i class="fa-solid fa-list"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Promotions <i class="fa-solid fa-percent"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Rewards <i class="fa-solid fa-gift"></i></a>
+                </li>
+            </ul>
+            <div class="d-flex align-items-center ms-auto">
+                <div class="search-container">
+                    <input class="form-control me-2 nav-search-bar" type="search" placeholder="Groceries" aria-label="Search" style="width: 210px;">
+                    <span class="voice-icon"><i class="fas fa-microphone"></i></span>
+                    <span class="search-icon"><i class="fas fa-search"></i></span>
+                </div>
+                <a class="shopping-cart" href="#"><i class="fas fa-shopping-cart"></i> Cart</a>
+                <div class="user-info d-flex">
+                    <a class="nav-link-1" href="#"><i class="fas fa-user"></i> Login/Sign up</a>
+                    <a class="nav-link-1" href="#"><i class="fas fa-question-circle"></i> Help Centre</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
